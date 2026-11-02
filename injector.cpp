@@ -229,7 +229,7 @@ int WINAPI wWinMain(HINSTANCE hi, HINSTANCE, PWSTR, int show) {
     wc.cbSize = sizeof wc;
     wc.lpfnWndProc = WndProc;
     wc.hInstance = hi;
-    wc.hCursor = LoadCursorW(nullptr, IDC_ARROW);
+    wc.hCursor = LoadCursorW(nullptr, MAKEINTRESOURCEW(32512));
     wc.hbrBackground = (HBRUSH)(COLOR_BTNFACE + 1);
     wc.lpszClassName = L"OmbrynInjector";
     RegisterClassExW(&wc);
